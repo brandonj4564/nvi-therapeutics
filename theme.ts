@@ -9,9 +9,18 @@ import { createTheme, rem } from '@mantine/core';
 // });
 
 export const theme = createTheme({
+  breakpoints: {
+    xs: '30em',
+    sm: '48em',
+    md: '64em',
+    lg: '74em',
+    xl: '90em',
+  },
+
+  primaryColor: 'primaryColor',
+
   colors: {
-    // Add your color
-    primaryColor: [
+    'primaryColor': [ // The teal color
       "#e0fffd",
       "#cffaf6",
       "#a5f2ea",
@@ -23,24 +32,32 @@ export const theme = createTheme({
       "#00ae9f",
       "#009789"
     ],
-    // or replace default theme color
-    blue: [
-      '#eef3ff',
-      '#dee2f2',
-      '#bdc2de',
-      '#98a0ca',
-      '#7a84ba',
-      '#6672b0',
-      '#5c68ac',
-      '#4c5897',
-      '#424e88',
-      '#364379',
+    darkColor: [
+      "#f4f5f6",
+      "#e8e8e8",
+      "#cecece",
+      "#b2b3b4",
+      "#999d9e",
+      "#898f92",
+      "#7f888c",
+      "#6c7579",
+      "#3a4f59", // dark color, from Figma, access through "darkColor.8"
+      "#2f383c" // darkest color, from Figma
     ],
   },
 
   shadows: {
     md: '1px 1px 3px rgba(0, 0, 0, .25)',
     xl: '5px 5px 3px rgba(0, 0, 0, .25)',
+  },
+
+  fontSizes: {
+    xs: "14px",
+    sm: "16px",
+    md: "20px",
+    lg: "24px",
+    xl: "30px",
+    xxl: "36px"
   },
 
   fontFamily: 'Poppins, sans-serif',

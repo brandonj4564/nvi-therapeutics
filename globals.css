@@ -1,10 +1,35 @@
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/poppins-font/PoppinsRegular-B2Bw.otf') format('truetype'),
-       url('/fonts/poppins-font/PoppinsBold-GdJA.otf') format('truetype');
-  font-weight: 400 700;
+  src: url('/fonts/poppins-font/PoppinsRegular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
+  unicode-range: U+000-5FF; /* Ensures the browser maps it properly */
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-font/PoppinsMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-font/PoppinsSemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/poppins-font/PoppinsBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+}
+
 
 @font-face {
   font-family: 'Optimus Princeps';

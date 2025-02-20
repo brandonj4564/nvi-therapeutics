@@ -1,9 +1,10 @@
 import '@mantine/core/styles.css';
 
 import React from 'react';
-import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, Container, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
 import Header from '@/components/Header';
+import { ScreenSizeProvider } from "@/contexts/ScreenSizeContext";
 import '../globals.css'
 
 export const metadata = {
@@ -22,10 +23,16 @@ export default function RootLayout({ children }: { children: any }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body>
+      <body style={{
+        backgroundColor: "#EFEFEF"
+      }}>
         <MantineProvider theme={theme} defaultColorScheme='light' forceColorScheme='light'>
-          <Header/>
-          {children}
+          <ScreenSizeProvider>
+            <Container size="lg" p="1rem 2rem">
+              <Header />
+              {children}
+            </Container>
+          </ScreenSizeProvider>
         </MantineProvider>
       </body>
     </html>
