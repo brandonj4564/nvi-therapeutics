@@ -44,6 +44,32 @@ export const theme = createTheme({
       "#3a4f59", // dark color, from Figma, access through "darkColor.8"
       "#2f383c" // darkest color, from Figma
     ],
+    lightColor: [
+      "#ebfffd", // light color
+      "#d7fdf9",
+      "#a9fdf3",
+      "#7bfded",
+      "#5dfde7",
+      "#50fde4",
+      "#48fde3",
+      "#3be1c9",
+      "#2bc8b2",
+      "#00ad99"
+    ],
+    lightestColor:
+      [
+        "#f5f5f5", // lightest color
+        "#e7e7e7",
+        "#cdcdcd",
+        "#b2b2b2",
+        "#9a9a9a",
+        "#8b8b8b",
+        "#848484",
+        "#717171",
+        "#656565",
+        "#575757"
+      ]
+
   },
 
   shadows: {
