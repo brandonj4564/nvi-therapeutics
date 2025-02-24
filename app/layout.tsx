@@ -6,6 +6,7 @@ import { theme } from '../theme';
 import Header from '@/components/Header';
 import { ScreenSizeProvider } from "@/contexts/ScreenSizeContext";
 import '../globals.css'
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'NVI Therapeutics',
@@ -28,9 +29,11 @@ export default function RootLayout({ children }: { children: any }) {
       }}>
         <MantineProvider theme={theme} defaultColorScheme='light' forceColorScheme='light'>
           <ScreenSizeProvider>
-            <Container size="lg" p="1rem 2rem">
-              <Header />
+            <Header />
+            <Container size="lg" p="0rem 2rem">
+
               {children}
+              <Footer />
             </Container>
           </ScreenSizeProvider>
         </MantineProvider>

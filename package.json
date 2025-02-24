@@ -24,6 +24,8 @@
     "@mantine/hooks": "7.17.0",
     "@next/bundle-analyzer": "^15.1.5",
     "@tabler/icons-react": "^3.30.0",
+    "framer-motion": "^12.4.7",
+    "lottie-react": "^2.4.1",
     "next": "15.1.5",
     "react": "19.0.0",
     "react-dom": "19.0.0"

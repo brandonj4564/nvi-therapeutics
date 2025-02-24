@@ -30,7 +30,7 @@ const DesktopHeroBanner = () => {
             </BackgroundImage>
         </Grid.Col>
         <Grid.Col span={6}>
-            <BackgroundImage src="/hero-banner.jpg" w="50vw" h={460} pos="absolute">
+            <BackgroundImage src="/hero-banner.jpg" w="50vw" h={460} pos="absolute" style={{ zIndex: 10 }}>
                 <Overlay color="#2F383C" backgroundOpacity={0.35} />
                 <Overlay color="#40E0D0" backgroundOpacity={0.15} />
             </BackgroundImage>
