@@ -6,7 +6,7 @@ import { Welcome } from '../components/Welcome/Welcome';
 import { BackgroundImage, Container, Flex, Grid, Text, Group, Stack, Overlay, Divider, Card, Box, rgba, Image } from '@mantine/core';
 import { theme } from '@/theme';
 import HeroBanner from '@/components/HeroBanner';
-import { IconCancel, IconCircleCheckFilled } from '@tabler/icons-react';
+import { IconCancel, IconCircleCheckFilled, IconSettingsDollar, IconTrendingUp, IconClockBolt } from '@tabler/icons-react';
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import { useState, useEffect } from 'react';
@@ -17,9 +17,9 @@ import saveMoneyAnim from "@/public/lotties/savemoney.json";
 function FeaturesGrid() {
   const features = [
     { icon: <IconCancel />, lottie: dnaAnim, title: "Non-Viral Approach", description: "Eliminates the risks and high costs associated with viral vector production, ensuring consistent and scalable results." },
-    { icon: <IconCancel />, lottie: saveMoneyAnim, title: "Cost Effective Solutions", description: "Reduces overall production costs while maintaining superior therapeutic outcomes." },
-    { icon: <IconCancel />, lottie: dnaAnim, title: "High Efficiency", description: "Our system achieves accurate integration of target gene with reduced off-target effects, enhancing therapeutic efficacy." },
-    { icon: <IconCancel />, lottie: dnaAnim, title: "Rapid Manufacturing", description: "Speeds up the production process, allowing faster delivery of personalized treatments." },
+    { icon: <IconSettingsDollar />, lottie: saveMoneyAnim, title: "Cost Effective Solutions", description: "Reduces overall production costs while maintaining superior therapeutic outcomes." },
+    { icon: <IconTrendingUp />, lottie: dnaAnim, title: "High Efficiency", description: "Our system achieves accurate integration of target gene with reduced off-target effects, enhancing therapeutic efficacy." },
+    { icon: <IconClockBolt />, lottie: dnaAnim, title: "Rapid Manufacturing", description: "Speeds up the production process, allowing faster delivery of personalized treatments." },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -179,7 +179,7 @@ export default function HomePage() {
       {/* <Welcome />
       <ColorSchemeToggle /> */}
 
-      <Flex w="100%" justify='center' m="2rem 0">
+      <Flex w="100%" justify='center' m="2rem 0 4rem 0">
         <Text fz="xl" c="darkest.9" fw="md" style={{ letterSpacing: 0.1, lineHeight: 1.3 }}>
           NVI Therapeutics <b style={{ color: primaryColor }}>cares</b> about the future
         </Text>
