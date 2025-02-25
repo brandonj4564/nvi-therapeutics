@@ -1,3 +1,5 @@
+"use client"
+
 import { useScreenSize } from "@/contexts/ScreenSizeContext"
 import { theme } from "@/theme"
 import { Grid, BackgroundImage, Flex, Container, Stack, Overlay, Text } from "@mantine/core"
